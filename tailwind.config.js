@@ -3,6 +3,9 @@ module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      transitionProperty: {
+        height: 'height',
+      },
       colors: {
         orange: '#ed7c50',
         darkOrange: '#d96d43',

@@ -1,5 +1,3 @@
-import { Button } from './Button.component';
-
-export { Button };
-
 export * from './MenuButton';
+export * from './Icons';
+export * from './Header';
