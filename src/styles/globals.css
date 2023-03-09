@@ -87,3 +87,11 @@ body.scrolled .header {
     height: 38px;
   }
 }
+
+.font_apoc {
+  font-family: 'Apoc';
+}
+
+.font_aeonik {
+  font-family: 'Aeonik';
+}
