@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .pause {
+    animation-play-state: paused;
+  }
+}
+
 @font-face {
   font-family: 'Aeonik';
   src: url('../fonts/aeonik-bold.woff2') format('woff2'),

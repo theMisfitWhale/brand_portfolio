@@ -3,6 +3,15 @@ module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      animation: {
+        loopL: 'loopTextLeft  4s linear infinite',
+      },
+      keyframes: {
+        loopTextLeft: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
       transitionProperty: {
         height: 'height',
       },
