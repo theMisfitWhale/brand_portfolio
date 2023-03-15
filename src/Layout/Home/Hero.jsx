@@ -31,8 +31,8 @@ export const HomeHero = () => {
 
   return (
     <div className=" min-h-screen pt-[120px] pb-[90px] lg:py-[180px]">
-      <div className="h_container font_apoc pb-[calc(5.8vw + 60px)] md:pb-[calc(9.8vw + 60px)] flex flex-col items-center px-2 lg:pb-[4vw]">
-        <h1 className="h_title relative w-full text-center text-[8.7vw] font-light uppercase leading-[90%] ">
+      <div className="h_container font_apoc flex flex-col items-center  px-2 pb-[20vw]  lg:pb-[4vw]">
+        <h1 className="h_title  relative w-full text-center text-[15vw] font-light uppercase leading-[90%] lg:text-[8.7vw] ">
           <span className="-mb-1.5 -mt-6 inline-block overflow-hidden align-bottom">
             <span className=" inline-block  translate-y-full pb-1.5 pt-6 will-change-transform ">
               You&nbsp;
@@ -64,7 +64,7 @@ export const HomeHero = () => {
             </span>
           </span>
         </h1>
-        <h1 className="h_title relative w-full text-center text-[8.7vw] font-light uppercase leading-[90%] ">
+        <h1 className="h_title relative  w-full text-center text-[15vw] font-light uppercase leading-[90%] lg:text-[8.7vw] ">
           <span className="-mb-1.5 -mt-6 inline-block overflow-hidden align-bottom">
             <span className=" inline-block  translate-y-full pb-1.5 pt-6 will-change-transform">
               People&nbsp;
@@ -76,9 +76,9 @@ export const HomeHero = () => {
             </span>
           </span>
         </h1>
-        <h1 className="h_title relative w-full text-center text-[8.7vw] font-light uppercase leading-[90%] ">
+        <h1 className="h_title relative w-full text-center text-[15vw] font-light uppercase leading-[90%] lg:text-[8.7vw] ">
           <span className="-mb-1.5 -mt-6 inline-block overflow-hidden align-bottom">
-            <span className="font_aeonik inline-block  translate-y-full pb-1.5  pt-6 text-[8.7vw]  font-medium leading-[81%] text-orange will-change-transform ">
+            <span className="font_aeonik inline-block  translate-y-full pb-1.5  pt-6    font-medium leading-[81%] text-orange will-change-transform ">
               By Loving
             </span>
           </span>
@@ -88,7 +88,7 @@ export const HomeHero = () => {
             </span>
           </span>
         </h1>
-        <h1 className="h_title relative w-full text-center text-[8.7vw] font-light uppercase leading-[90%] ">
+        <h1 className="h_title relative flex w-full flex-col items-center justify-center text-center text-[15vw]  font-light uppercase leading-[90%] lg:flex-row lg:text-[8.7vw] ">
           <span className="-mb-1.5 -mt-6 inline-block overflow-hidden align-bottom">
             <span className="inline-block  translate-y-full pb-1.5 pt-6 will-change-transform">
               Audience
