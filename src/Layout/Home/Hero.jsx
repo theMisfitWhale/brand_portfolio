@@ -113,10 +113,10 @@ export const HomeHero = () => {
           >
             <div className="group flex h-full cursor-pointer items-center whitespace-nowrap">
               <span className=" group-hover:pause animate-loopL">
-                Show Reel 2022© Show Reel 2022©&nbsp;
+                Show Reel 2023© Show Reel 2023©&nbsp;
               </span>
               <span className=" group-hover:pause animate-loopL">
-                Show Reel 2022© Show Reel 2022©&nbsp;
+                Show Reel 2023© Show Reel 2023©&nbsp;
               </span>
             </div>
           </div>
