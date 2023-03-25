@@ -2,12 +2,16 @@ import React, { useEffect, useRef } from 'react';
 import { FlowerLogo } from '../../components/Icons';
 import gsap from 'gsap';
 import { CustomEase } from 'gsap/dist/CustomEase';
+import { Player } from '@lottiefiles/react-lottie-player';
 
 gsap.registerPlugin(CustomEase);
 CustomEase.create('cubic-text', '0.25, 1, 0.5, 1');
 
+import likeCrazyLottie from '../../lottie/like-cray.json';
+
 export const HomeHero = () => {
   const heroInfiniteRef = useRef(null);
+  const likeCrazyLottieRef = useRef(null);
 
   useEffect(() => {
     const titles = document.querySelectorAll('.h_title');
@@ -28,7 +32,7 @@ export const HomeHero = () => {
       );
     });
 
-    tl.to(
+    tl.add(() => likeCrazyLottieRef?.current?.play(), 0.8).to(
       heroInfiniteRef?.current,
       {
         marginLeft: 0,
@@ -109,7 +113,7 @@ export const HomeHero = () => {
           </span>
           <div
             ref={heroInfiniteRef}
-            className="font_aeonik absolute bottom-[-25vw] left-[35%] ml-10 -mr-10 h-8  w-40 overflow-hidden rounded-full border border-black text-xs font-normal uppercase  opacity-0  lg:relative lg:left-8 lg:bottom-3 lg:right-[1vw] lg:h-14 lg:w-[16vw] lg:text-xl  lg:leading-10 "
+            className="font_aeonik absolute bottom-[-35vw] left-[25%] ml-10 -mr-10 h-8 w-40  overflow-hidden rounded-full border border-black text-xs font-normal uppercase opacity-0  md:left-[40%]   md:h-14  md:w-52 md:text-xl lg:relative lg:left-8 lg:bottom-3 lg:right-[1vw] lg:w-[16vw]  lg:leading-10 "
           >
             <div className="group flex h-full cursor-pointer items-center whitespace-nowrap">
               <span className=" group-hover:pause animate-loopL">
@@ -121,6 +125,14 @@ export const HomeHero = () => {
             </div>
           </div>
         </h1>
+        <div className="scale-80 rotate-[4.24deg] lg:-translate-y-2 lg:-translate-x-8 lg:scale-105 ">
+          <Player
+            src={likeCrazyLottie}
+            ref={likeCrazyLottieRef}
+            keepLastFrame={true}
+            loop={false}
+          />
+        </div>
       </div>
     </div>
   );

@@ -15,6 +15,7 @@
     "npm": "please-use-yarn"
   },
   "dependencies": {
+    "@lottiefiles/react-lottie-player": "^3.5.3",
     "@next/font": "13.1.4",
     "@studio-freight/lenis": "^0.2.28",
     "eslint": "8.32.0",
